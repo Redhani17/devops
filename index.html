@@ -1,10 +1,251 @@
-<html>
-  <head>
-    <title>
-      JENKINS
-    </title>
-  </head>
-  <body>
-    <h1>WELCOME TO CSE C MEGHA</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virat Kohli - King Kohli</title>
+
+<style>
+/* ===== GENERAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:black;
+    color:white;
+    line-height:1.6;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    background:#0d0d0d;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid red;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav h2{
+    color:red;
+    letter-spacing:2px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:red;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    url('https://wallpapercave.com/wp/wp4923976.jpg') center/cover;
+}
+
+.hero h1{
+    font-size:60px;
+    color:red;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+    color:#ddd;
+}
+
+/* ===== SECTION ===== */
+section{
+    padding:60px 80px;
+}
+
+.section-title{
+    text-align:center;
+    color:red;
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+/* ===== ABOUT ===== */
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 0 20px red;
+}
+
+/* ===== STATS ===== */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #222;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border:1px solid red;
+    box-shadow:0 0 15px red;
+}
+
+.card h3{
+    color:red;
+    font-size:28px;
+}
+
+/* ===== CAREER TIMELINE ===== */
+.timeline{
+    border-left:3px solid red;
+    padding-left:25px;
+}
+
+.timeline div{
+    margin-bottom:30px;
+}
+
+.timeline h4{
+    color:red;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0d0d0d;
+    border-top:2px solid red;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+    <h2>RCB | KING KOHLI</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#career">Career</a></li>
+    </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div>
+        <h1>Virat Kohli</h1>
+        <p>The Run Machine | King of Modern Cricket</p>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <h2 class="section-title">About Virat Kohli</h2>
+    <div class="about">
+        <img src="https://wallpapercave.com/wp/wp6754374.jpg">
+        <p>
+            Virat Kohli is one of the greatest cricketers in modern history and a former captain of the Indian National Cricket Team. 
+            Known for his aggressive mindset, unmatched consistency, and incredible fitness, Kohli has redefined batting across formats.
+            <br><br>
+            He has been the backbone of Royal Challengers Bangalore (RCB) and is loved worldwide for his passion, dedication, and leadership.
+        </p>
+    </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section id="stats">
+    <h2 class="section-title">Career Highlights</h2>
+
+    <div class="stats">
+        <div class="card">
+            <h3>75+</h3>
+            <p>International Centuries</p>
+        </div>
+
+        <div class="card">
+            <h3>25,000+</h3>
+            <p>International Runs</p>
+        </div>
+
+        <div class="card">
+            <h3>2008</h3>
+            <p>International Debut</p>
+        </div>
+
+        <div class="card">
+            <h3>U19 WC</h3>
+            <p>Winning Captain (2008)</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CAREER ===== -->
+<section id="career">
+    <h2 class="section-title">Career Timeline</h2>
+
+    <div class="timeline">
+        <div>
+            <h4>2008</h4>
+            <p>Won ICC Under-19 World Cup as captain and debuted for India.</p>
+        </div>
+
+        <div>
+            <h4>2013</h4>
+            <p>Became world's No.1 ODI batsman.</p>
+        </div>
+
+        <div>
+            <h4>2017</h4>
+            <p>Appointed as captain across all formats for India.</p>
+        </div>
+
+        <div>
+            <h4>IPL Legacy</h4>
+            <p>Face of Royal Challengers Bangalore since IPL inception.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>Made with ❤️ for King Kohli | RCB Forever</p>
+</footer>
+
+</body>
 </html>
