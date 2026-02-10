@@ -10,7 +10,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family:'Segoe UI', sans-serif;
 }
 
 body{
@@ -46,37 +46,83 @@ nav ul{
 nav ul li a{
     text-decoration:none;
     color:white;
-    transition:0.3s;
 }
 
 nav ul li a:hover{
     color:red;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== HERO ===== */
 .hero{
     height:100vh;
+    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
     padding-top:80px;
     background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.95)),
-    url('https://cdn.wionews.com/sites/default/files/inline-images/Untitled%20design%20(73)_7.jpg')
-    center/cover no-repeat;
+      linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.95)),
+      url('https://cdn.wionews.com/sites/default/files/inline-images/Untitled%20design%20(73)_7.jpg');
+    background-size:cover;
+    background-position:center top;
+    background-repeat:no-repeat;
 }
 
 .hero h1{
-    font-size:64px;
+    font-size:70px;
     color:red;
-    letter-spacing:2px;
+    letter-spacing:3px;
 }
 
 .hero p{
     margin-top:15px;
     font-size:22px;
     color:#ddd;
+}
+
+/* ===== ACHIEVEMENTS ===== */
+.achievements{
+    padding:80px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    background:#050505;
+}
+
+.achievement-card{
+    background:#111;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid #222;
+    transition:0.4s;
+}
+
+.achievement-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.achievement-card div{
+    padding:20px;
+    text-align:center;
+}
+
+.achievement-card h3{
+    color:red;
+    margin-bottom:10px;
+}
+
+.achievement-card p{
+    color:#ccc;
+    font-size:15px;
+}
+
+.achievement-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px red;
+    border-color:red;
 }
 
 /* ===== SECTIONS ===== */
@@ -158,7 +204,6 @@ footer{
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
     <h2>RCB | CHASE MASTER</h2>
     <ul>
@@ -176,12 +221,39 @@ footer{
     </div>
 </section>
 
+<!-- ACHIEVEMENTS -->
+<section class="achievements">
+    <div class="achievement-card">
+        <img src="https://wallpapercave.com/wp/wp6754374.jpg">
+        <div>
+            <h3>IPL 2016 Legend</h3>
+            <p>973 runs in a single IPL season – a record that defines dominance.</p>
+        </div>
+    </div>
+
+    <div class="achievement-card">
+        <img src="https://wallpapercave.com/wp/wp4923976.jpg">
+        <div>
+            <h3>Chase Master</h3>
+            <p>Master of run chases with unmatched consistency under pressure.</p>
+        </div>
+    </div>
+
+    <div class="achievement-card">
+        <img src="https://wallpapercave.com/wp/wp7892325.jpg">
+        <div>
+            <h3>RCB Icon</h3>
+            <p>The heart and soul of Royal Challengers Bangalore since 2008.</p>
+        </div>
+    </div>
+</section>
+
 <!-- ABOUT -->
 <section id="about">
     <h2 class="section-title">About Virat Kohli</h2>
     <div class="about">
-        Virat Kohli is widely known as the <b>Chase Master</b> for his unmatched ability to finish run chases under pressure.
-        His intensity, consistency, and hunger for victory make him one of the greatest batsmen in cricket history.
+        Virat Kohli is celebrated as the <b>Chase Master</b> for redefining pressure batting.
+        His hunger for runs, aggressive mindset, and unmatched fitness have shaped modern cricket.
     </div>
 </section>
 
@@ -199,7 +271,7 @@ footer{
         </div>
         <div class="card">
             <h3>#18</h3>
-            <p>RCB Icon</p>
+            <p>RCB Forever</p>
         </div>
         <div class="card">
             <h3>2008</h3>
@@ -214,7 +286,7 @@ footer{
     <div class="timeline">
         <div>
             <h4>2008</h4>
-            <p>U19 World Cup winning captain & India debut</p>
+            <p>U19 World Cup champion & India debut</p>
         </div>
         <div>
             <h4>2013</h4>
@@ -222,18 +294,13 @@ footer{
         </div>
         <div>
             <h4>2016</h4>
-            <p>Greatest IPL season ever</p>
-        </div>
-        <div>
-            <h4>Legacy</h4>
-            <p>Defined modern chase batting</p>
+            <p>Historic IPL season</p>
         </div>
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>RCB Forever | Chase Master </p>
+    <p>RCB Forever | Chase Master 🔥</p>
 </footer>
 
 </body>
