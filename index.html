@@ -13,6 +13,10 @@
     font-family:'Segoe UI', sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     background:black;
     color:white;
@@ -20,8 +24,8 @@ body{
 
 /* ===== NAVBAR ===== */
 nav{
-    background:rgba(0,0,0,0.9);
-    padding:15px 40px;
+    background:rgba(0,0,0,0.95);
+    padding:15px 50px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -35,17 +39,20 @@ nav{
 nav h2{
     color:red;
     letter-spacing:2px;
+    font-weight:700;
 }
 
 nav ul{
     list-style:none;
     display:flex;
-    gap:25px;
+    gap:30px;
 }
 
 nav ul li a{
     text-decoration:none;
     color:white;
+    font-weight:500;
+    transition:0.3s;
 }
 
 nav ul li a:hover{
@@ -62,17 +69,17 @@ nav ul li a:hover{
     text-align:center;
     padding-top:80px;
     background:
-      linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.95)),
-      url('https://cdn.wionews.com/sites/default/files/inline-images/Untitled%20design%20(73)_7.jpg');
+      linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.95)),
+      url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ApqbsCgfmhBfwqWwoPaI5UYUKcKQOdB4bA&s');
     background-size:cover;
-    background-position:center top;
+    background-position:center;
     background-repeat:no-repeat;
 }
 
 .hero h1{
-    font-size:70px;
+    font-size:72px;
     color:red;
-    letter-spacing:3px;
+    letter-spacing:4px;
 }
 
 .hero p{
@@ -83,58 +90,60 @@ nav ul li a:hover{
 
 /* ===== ACHIEVEMENTS ===== */
 .achievements{
-    padding:80px;
+    padding:90px 70px;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:35px;
     background:#050505;
 }
 
 .achievement-card{
     background:#111;
-    border-radius:18px;
+    border-radius:20px;
     overflow:hidden;
     border:1px solid #222;
-    transition:0.4s;
+    transition:0.4s ease;
 }
 
 .achievement-card img{
     width:100%;
-    height:220px;
+    height:230px;
     object-fit:cover;
 }
 
 .achievement-card div{
-    padding:20px;
+    padding:22px;
     text-align:center;
 }
 
 .achievement-card h3{
     color:red;
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
 .achievement-card p{
     color:#ccc;
     font-size:15px;
+    line-height:1.5;
 }
 
 .achievement-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 25px red;
+    transform:translateY(-12px);
+    box-shadow:0 0 30px rgba(255,0,0,0.7);
     border-color:red;
 }
 
 /* ===== SECTIONS ===== */
 section{
-    padding:80px;
+    padding:90px 70px;
 }
 
 .section-title{
     text-align:center;
     color:red;
-    font-size:36px;
-    margin-bottom:40px;
+    font-size:38px;
+    margin-bottom:45px;
+    letter-spacing:1px;
 }
 
 /* ===== ABOUT ===== */
@@ -144,60 +153,71 @@ section{
     text-align:center;
     color:#ccc;
     font-size:18px;
-    line-height:1.8;
+    line-height:1.9;
 }
 
 /* ===== STATS ===== */
 .stats{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:35px;
 }
 
 .card{
     background:#111;
-    padding:30px;
-    border-radius:15px;
+    padding:35px;
+    border-radius:18px;
     text-align:center;
     border:1px solid #222;
-    transition:0.3s;
+    transition:0.35s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 20px red;
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,0,0,0.7);
     border-color:red;
 }
 
 .card h3{
-    font-size:30px;
+    font-size:32px;
     color:red;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#ccc;
 }
 
 /* ===== TIMELINE ===== */
 .timeline{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
     border-left:3px solid red;
-    padding-left:30px;
+    padding-left:35px;
 }
 
 .timeline div{
-    margin-bottom:30px;
+    margin-bottom:35px;
 }
 
 .timeline h4{
     color:red;
-    font-size:20px;
+    font-size:22px;
+    margin-bottom:6px;
+}
+
+.timeline p{
+    color:#ccc;
 }
 
 /* ===== FOOTER ===== */
 footer{
     background:#0b0b0b;
     text-align:center;
-    padding:20px;
+    padding:25px;
     border-top:2px solid red;
-    margin-top:50px;
+    margin-top:60px;
+    font-size:15px;
 }
 </style>
 </head>
