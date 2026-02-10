@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Virat Kohli - King Kohli</title>
+<title>Virat Kohli - Chase Master</title>
 
 <style>
-/* ===== GENERAL ===== */
 *{
     margin:0;
     padding:0;
@@ -17,18 +16,18 @@
 body{
     background:black;
     color:white;
-    line-height:1.6;
 }
 
 /* ===== NAVBAR ===== */
 nav{
-    background:#0d0d0d;
+    background:rgba(0,0,0,0.9);
     padding:15px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     border-bottom:2px solid red;
-    position:sticky;
+    position:fixed;
+    width:100%;
     top:0;
     z-index:1000;
 }
@@ -56,63 +55,63 @@ nav ul li a:hover{
 
 /* ===== HERO SECTION ===== */
 .hero{
-    height:90vh;
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-    url('https://wallpapercave.com/wp/wp4923976.jpg') center/cover;
+    padding-top:80px;
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.95)),
+    url('https://cdn.wionews.com/sites/default/files/inline-images/Untitled%20design%20(73)_7.jpg')
+    center/cover no-repeat;
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:64px;
     color:red;
+    letter-spacing:2px;
 }
 
 .hero p{
     margin-top:15px;
-    font-size:20px;
+    font-size:22px;
     color:#ddd;
 }
 
-/* ===== SECTION ===== */
+/* ===== SECTIONS ===== */
 section{
-    padding:60px 80px;
+    padding:80px;
 }
 
 .section-title{
     text-align:center;
     color:red;
-    font-size:35px;
-    margin-bottom:30px;
+    font-size:36px;
+    margin-bottom:40px;
 }
 
 /* ===== ABOUT ===== */
 .about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-}
-
-.about img{
-    width:100%;
-    border-radius:15px;
-    box-shadow:0 0 20px red;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    color:#ccc;
+    font-size:18px;
+    line-height:1.8;
 }
 
 /* ===== STATS ===== */
 .stats{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
 }
 
 .card{
     background:#111;
-    padding:25px;
-    border-radius:12px;
+    padding:30px;
+    border-radius:15px;
     text-align:center;
     border:1px solid #222;
     transition:0.3s;
@@ -120,19 +119,21 @@ section{
 
 .card:hover{
     transform:translateY(-8px);
-    border:1px solid red;
-    box-shadow:0 0 15px red;
+    box-shadow:0 0 20px red;
+    border-color:red;
 }
 
 .card h3{
+    font-size:30px;
     color:red;
-    font-size:28px;
 }
 
-/* ===== CAREER TIMELINE ===== */
+/* ===== TIMELINE ===== */
 .timeline{
+    max-width:800px;
+    margin:auto;
     border-left:3px solid red;
-    padding-left:25px;
+    padding-left:30px;
 }
 
 .timeline div{
@@ -141,24 +142,25 @@ section{
 
 .timeline h4{
     color:red;
+    font-size:20px;
 }
 
 /* ===== FOOTER ===== */
 footer{
+    background:#0b0b0b;
     text-align:center;
     padding:20px;
-    background:#0d0d0d;
     border-top:2px solid red;
-    margin-top:40px;
+    margin-top:50px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
+<!-- NAVBAR -->
 <nav>
-    <h2>RCB | KING KOHLI</h2>
+    <h2>RCB | CHASE MASTER</h2>
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#stats">Stats</a></li>
@@ -166,85 +168,72 @@ footer{
     </ul>
 </nav>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero">
     <div>
         <h1>Virat Kohli</h1>
-        <p>The Run Machine | King of Modern Cricket</p>
+        <p>The Run Machine | Chase Master</p>
     </div>
 </section>
 
-<!-- ===== ABOUT ===== -->
+<!-- ABOUT -->
 <section id="about">
     <h2 class="section-title">About Virat Kohli</h2>
     <div class="about">
-        <img src="https://wallpapercave.com/wp/wp6754374.jpg">
-        <p>
-            Virat Kohli is one of the greatest cricketers in modern history and a former captain of the Indian National Cricket Team. 
-            Known for his aggressive mindset, unmatched consistency, and incredible fitness, Kohli has redefined batting across formats.
-            <br><br>
-            He has been the backbone of Royal Challengers Bangalore (RCB) and is loved worldwide for his passion, dedication, and leadership.
-        </p>
+        Virat Kohli is widely known as the <b>Chase Master</b> for his unmatched ability to finish run chases under pressure.
+        His intensity, consistency, and hunger for victory make him one of the greatest batsmen in cricket history.
     </div>
 </section>
 
-<!-- ===== STATS ===== -->
+<!-- STATS -->
 <section id="stats">
     <h2 class="section-title">Career Highlights</h2>
-
     <div class="stats">
         <div class="card">
             <h3>75+</h3>
             <p>International Centuries</p>
         </div>
-
         <div class="card">
             <h3>25,000+</h3>
             <p>International Runs</p>
         </div>
-
+        <div class="card">
+            <h3>#18</h3>
+            <p>RCB Icon</p>
+        </div>
         <div class="card">
             <h3>2008</h3>
             <p>International Debut</p>
         </div>
-
-        <div class="card">
-            <h3>U19 WC</h3>
-            <p>Winning Captain (2008)</p>
-        </div>
     </div>
 </section>
 
-<!-- ===== CAREER ===== -->
+<!-- CAREER -->
 <section id="career">
     <h2 class="section-title">Career Timeline</h2>
-
     <div class="timeline">
         <div>
             <h4>2008</h4>
-            <p>Won ICC Under-19 World Cup as captain and debuted for India.</p>
+            <p>U19 World Cup winning captain & India debut</p>
         </div>
-
         <div>
             <h4>2013</h4>
-            <p>Became world's No.1 ODI batsman.</p>
+            <p>World No.1 ODI batsman</p>
         </div>
-
         <div>
-            <h4>2017</h4>
-            <p>Appointed as captain across all formats for India.</p>
+            <h4>2016</h4>
+            <p>Greatest IPL season ever</p>
         </div>
-
         <div>
-            <h4>IPL Legacy</h4>
-            <p>Face of Royal Challengers Bangalore since IPL inception.</p>
+            <h4>Legacy</h4>
+            <p>Defined modern chase batting</p>
         </div>
     </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
+<!-- FOOTER -->
 <footer>
-    <p>Made with ❤️ for King Kohli | RCB Forever</p>
+    <p>RCB Forever | Chase Master </p>
 </footer>
 
 </body>
